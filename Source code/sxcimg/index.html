@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">  
+
+    <title>Indian Music Group</title>
+</head>
+<body>
+<nav class="nav">
+    <div class="container">
+        <div class="logo">
+            <a href="#">Indian Music Group</a>
+        </div>
+        <div id="mainListDiv" class="main_list">
+            <ul class="navlinks">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Janfest</a></li>
+                <li><a href="#">IMusicG</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+		<span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+    </div>
+</nav>
+<section class="home">
+</section>
+<br>
+<div style="height: 1000px">
+    <!-- just to make scrolling effect possible -->
+    <h2 class="myH2">Welcome to Indian Music Group</h2>
+    <br><br>
+    <p class="myP">The Indian Music Group of St. Xavier’s College, Mumbai was founded in the year 1973 with the support of the then principal, Fr. Lancy Pereira and the great Ustad Alla Rakha Qureshi.
+        Since its inception in the year 1973, the IMG has been striving to inculcate appreciation and love for Indian Classical art forms amongst people of all ages. The legacy of the IMG is laden with enthralling performances by legends, celebrations of our heritage, and the magical ambiance created by the Gothic structure at St. Xavier’s College where the soothing sitar echoes through the 150-year-old arches.  A novel institution in Mumbai, the IMG has seen the evolution of classical music through the ages. IMG concerts have been graced by the presence of innumerable legends and dignitaries from Ustad Allah Rakha Khan to Pt. Jasraj, from Ustad Zakir Hussain to Pt. Shivkumar Sharma and many more.
+        The artists have not only thrilled audiences, but have also helped the IMG create and spread the joy of Indian Classical music. Organized solely by students, all Baithaks, Listening sessions, concerts and our flagship event-Janfest aim at preserving our rich musical heritage, and keeping it rooted among the youth.
+        
+    </p>
+
+</div>
+<footer>
+    <div class="bod">
+        <div class="all_content">
+            <div class="iconss" >
+                <a href="#"><i class="ic fab fa-facebook-f"></i></a>
+                <a href="#"><i class="ic fab fa-instagram"></i></a>
+                <a href="#"><i class="ic fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="ic fab fa-twitter"></i></i></a>
+            </div> 
+        </div>
+    </div>
+
+    
+</footer>
+<!-- Jquery needed -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/scripts.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+<script>
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+            $('.nav').addClass('affix');
+            console.log("OK");
+        } else {
+            $('.nav').removeClass('affix');
+        }
+    });
+</script>
+<script>
+    $('.navTrigger').click(function () {
+        $(this).toggleClass('active');
+        console.log("Clicked menu");
+        $("#mainListDiv").toggleClass("show_list");
+        $("#mainListDiv").fadeIn();
+
+    });
+
+</script>
+</body>
+</html>
